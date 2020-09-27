@@ -1,0 +1,253 @@
+/*GENERAL*/
+body {
+  font-family: "Mulish", sans-serif;
+  overflow-x: hidden;
+}
+
+.col-12 {
+  padding: 0;
+}
+
+/*NAVBAR*/
+nav {
+  position: fixed !important;
+  z-index: 9;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+nav a {
+  color: white !important;
+  margin-left: 5%;
+}
+
+nav ul {
+  width: 100%;
+  margin-left: 20%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: white !important;
+}
+
+.navbar-brand {
+  border: white 1px solid;
+  padding: 5px;
+}
+
+/*CAROUSEL*/
+.carousel-row img {
+  max-height: 100vh;
+}
+
+.carousel-text {
+  margin-bottom: 34vh;
+}
+
+.carousel-text h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.carousel-text .btn {
+  color: white;
+  border: white 1px solid;
+  font-size: 12px;
+  padding: 10px 35px;
+  border-radius: 0%;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+/*CHEF*/
+.chef-container {
+  display: flex;
+  justify-content: center;
+}
+
+.chef-row {
+  height: 50vh;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.img-chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img-chef img {
+  max-width: 40vh;
+}
+
+.text-chef {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.text-chef p {
+  margin-top: 30px;
+  color: gray;
+}
+
+/*MENU INTRO TEXT*/
+.menu-row {
+  height: 20vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/*MAIN CARDS*/
+.main-container {
+  width: 55%;
+  margin-bottom: 50px;
+
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.btn-menu {
+  border: none;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.37);
+  border-radius: 0%;
+}
+
+.cards-col {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.37);
+  margin-bottom: 30px;
+  
+}
+
+.cards img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.cards p{
+  color: gray;
+  font-size: 14px;
+  margin-left: 10px;
+  width: 290px;
+}
+
+/*SPECIALITIES*/
+.our-specialities {
+  background-image: url(/images/bg_3.jpg);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+}
+
+.our-specialities h1 {
+  margin-bottom: 30px;
+}
+
+.specialities-card-col {
+  padding: 0px;
+}
+
+.our-specialities h1 {
+  color: white;
+}
+
+.specialities-card {
+  background-color: white;
+  display: flex;
+}
+
+.specialities-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.specialities-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
+.specialities-card-text .dish-title {
+  color: black;
+  font-size: 14px;
+}
+
+.specialities-card-text p {
+  color: gray;
+  font-size: 11px;
+}
+
+.specialities-card-text .dish-price {
+  color: rgb(255, 155, 5);
+  font-weight: bold ;
+  font-size: 10px;
+}
+
+/*BLOG*/
+.blog-container {
+  width: 80%;
+  margin-bottom: 50PX;
+}
+
+.blog-card img  {
+  width: 100%;
+}
+
+/*IG*/
+.ig-container {
+  width: 80%;
+  padding: 0px;
+}
+
+.images-row .col {
+  display: flex;
+}
+
+.ig-container .col {
+  padding: 0px;
+  
+}
+
+.ig-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.ig-container .col-12 {
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 50px;
+}

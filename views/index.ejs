@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Boostrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Styles link-->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--NAVBAR-->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">CodeRestaurant & House</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Specialities</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Reservation</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--CAROUSEL-->
+        <div class="row carousel-row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/bg_1.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block carousel-text">
+                                <h1>Tasty & Delicious Food</h1>
+                                <div class="btn">Book a Table</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/bg_2.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block carousel-text">
+                                <h1>Tasty & Delicious Food</h1>
+                                <div class="btn">Book a Table</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/bg_3.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block carousel-text">
+                                <h1>Tasty & Delicious Food</h1>
+                                <div class="btn">Book a Table</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CHEF-->
+    <div class="container-fluid chef-container">
+        <div class="row chef-row">
+            <div class="col-6 img-chef">
+                <img src="./images/chef-1.jpg" alt="">
+            </div>
+            <div class="col-6 text-chef">
+                <p>ABOUT TASTY</p>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga!</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorum aliquid corporis maxime
+                    expedita nam totam vero! Cumque non nesciunt porro qui.<br><br>
+
+                    Error voluptate, tempore alias rerum dolor,
+                    obcaecati repellendus quia consectetur quasi omnis autem maxime deserunt, nobis asperiores est ipsam
+                    illo consequuntur deleniti ut quisquam maiores! Facilis enim earum cupiditate ipsum ea cumque sequi
+                    dolor sit, officia non itaque laboriosam saepe.</p>
+            </div>
+        </div>
+    </div>
+    <!--TEXT INTRO-->
+    <div class="container-fluid">
+        <div class="row menu-row">
+            <div class="menu-intro">
+                <p>OUR MENU</p>
+                <h4>Discover Our Exclusive Menu</h4>
+            </div>
+        </div>
+    </div>
+    <!--MAIN CARDS-->
+    <div class="container-fluid main-container">
+        <div class="row btn-row">
+            <div class="btn btn-menu">Main</div>
+        </div>
+        <div class="row cards-row">
+            <% result.forEach(food => { %>
+                <% if (food.type == 'Dessert' ){ %>
+            <div class="col-6 cards-col">
+                <div class="cards">
+                    <img src="./images/dessert-1.jpg" alt="">
+                    <p><%- food.name %></p>
+                    <h4><%- food.price %></h4>
+                </div>
+            </div>
+            <%  } %>
+            <%  }) %>
+        </div>
+    </div>
+    <!--DESSERT CARDS-->
+    <div class="container-fluid main-container">
+        <div class="row btn-row">
+            <div class="btn btn-menu">Dessert</div>
+        </div>
+        <div class="row cards-row">
+            <% result.forEach(food => { %>
+                <% if (food.type == 'Main' ){ %>
+            <div class="col-6 cards-col">
+                <div class="cards">
+                    <img src="./images/dessert-1.jpg" alt="">
+                    <p><%- food.name %></p>
+                    <h4><%- food.price %></h4>
+                </div>
+            </div>
+            <%  } %>
+            <%  }) %>
+        </div>
+    </div>
+    <!--DRINKS CARDS-->
+    <div class="container-fluid main-container">
+        <div class="row btn-row">
+            <div class="btn btn-menu">Drink</div>
+        </div>
+        <div class="row cards-row">
+            <% result.forEach(food => { %>
+                <% if (food.type == 'Drink' ){ %>
+            <div class="col-6 cards-col">
+                <div class="cards">
+                    <img src="./images/dessert-1.jpg" alt="">
+                    <p><%- food.name %></p>
+                    <h4><%- food.price %></h4>
+                </div>
+            </div>
+            <%  } %>
+            <%  }) %>
+        </div>
+    </div>
+    <!--OUR SPECIALITIES SLIDER-->
+    <div class="container-fluid our-specialities">
+        <div class="row">
+            <div class="col-12">
+                <h1>Our Specialities</h1>
+            </div>
+        </div>
+        <div class="row specialities-row">
+            <div class="col-6 specialities-card-col">
+                <div class="specialities-card">
+                    <div class="specialities-card-text">
+                        <p class="dish-title">Beef Steak</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eveniet expedita.
+                        </p>
+                        <p class="dish-price">FROM $10.00</p>
+                    </div>
+                    <img src="./images/dish-3.jpg" alt="">
+                </div>
+                <div class="specialities-card">
+                    <img src="./images/dish-3.jpg" alt="">
+                    <div class="specialities-card-text">
+                        <p class="dish-title">Beef Steak</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eveniet expedita.
+                        </p>
+                        <p class="dish-price">FROM $10.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 specialities-card-col">
+                <div class="specialities-card">
+                    <div class="specialities-card-text">
+                        <h6>Beef Steak</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eveniet expedita.
+                        </p>
+                        <h6>FROM $10.00</h6>
+                    </div>
+                    <img src="./images/dish-3.jpg" alt="">
+                </div>
+                <div class="specialities-card">
+                    <img src="./images/dish-3.jpg" alt="">
+                    <div class="specialities-card-text">
+                        <p class="dish-title">Beef Steak</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem eveniet expedita.
+                        </p>
+                        <p class="dish-price">FROM $10.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--TEXT INTRO BLOG-->
+    <div class="container-fluid">
+        <div class="row menu-row">
+            <div class="menu-intro">
+                <p>BLOG</p>
+                <h4>Recent Blog</h4>
+            </div>
+        </div>
+    </div>
+    <!--BLOG CARDS-->
+    <div class="container-fluid blog-container">
+        <div class="row">
+            <div class="col-4">
+                <div class="blog-card">
+                    <img src="./images/image_5.jpg" alt="">
+                    <p>July 7</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, neque.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="blog-card">
+                    <img src="./images/image_5.jpg" alt="">
+                    <p>July 7</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, neque.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="blog-card">
+                    <img src="./images/image_5.jpg" alt="">
+                    <p>July 7</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, neque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--IG-->
+    <div class="row btn-row">
+        <div class="btn btn-menu">Instagram</div>
+    </div>
+    <div class="container-fluid ig-container">
+        <div class="row images-row">
+            <% result1.forEach(insta => { %>
+            <div class="col">
+                <img src="/images/<%- insta.path %>" alt="">
+            </div>
+            <%  }) %>
+        </div>
+        <div class="row row-12">
+            <div class="col-12"></div>
+        </div>
+    </div>
+
+    <!--JS LINKS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
